@@ -15,6 +15,11 @@ const BoxScreen = () => {
             <Text style={styles.textTwoStyle}>Child # 5</Text>
             <Text style={styles.textStyle}>Child # 6</Text>
         </View>
+        <View style={styles.viewStyleColumn}>
+            <Text style={styles.textStyle}>Child # 7</Text>
+            <Text style={styles.textStyle}>Child # 8</Text>
+            <Text style={styles.textThreeStyle}>Child # 9</Text>
+        </View>
     </View>
 }
 
@@ -47,6 +52,13 @@ const styles = StyleSheet.create({
         borderWidth: 3,
         borderColor: 'red',
         alignSelf: 'flex-end'
+    },
+    textThreeStyle: {
+        borderWidth: 5,
+        borderColor: 'green',
+        alignSelf: 'flex-end',
+        fontSize: 18,
+        ...StyleSheet.absoluteFillObject
     }
 });
 
