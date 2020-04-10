@@ -15,6 +15,9 @@ const TextScreen = () => {
             onChangeText={(newValue) => setName(newValue)} 
         />
         <Text>My name is {name}</Text>
+
+        {/* example of conditional rendering. can use null to display nothing */}
+        {name.length === 4 ? <Text>Your name has 4 characters</Text> : null }
     </View>
 }
 
